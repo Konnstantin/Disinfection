@@ -1,0 +1,11 @@
+$red: #E31E24;
+$bl: #252525;
+
+@mixin f500 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+}
+@mixin f700 {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 700;
+}
