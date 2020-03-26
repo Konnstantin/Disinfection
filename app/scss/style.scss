@@ -590,7 +590,7 @@
   }
 }
 .information__item-title {
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   border-radius: 15px;
   background-color: #252525;
   text-align: center;
@@ -732,9 +732,9 @@
 
 // end reviews
 
-// start contacts
+// start footer
 
-.contacts {
+.footer {
   position: relative;
   background-color: #252525;
   max-width: 1442px;
@@ -861,5 +861,220 @@
     }
   }
 }
-// end contacts
+// end footer
+
+
+// start aside
+.blog {
+  margin-top: 66px;
+}
+.blog__inner {
+  display: flex;
+}
+.page__aside {
+  max-width: 262px;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.aside__item--audit {
+  height: 427px;
+  padding: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+  &::before {
+    content: '';
+    background-color: rgba(37, 37, 37, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.audit__content {
+  border: 4px solid $red;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 19%;
+    width: 4px;
+    background-color: #353535;
+    top: 30px;
+    left: -4px;
+    
+  }
+  &-info {
+    margin-top: 38px;
+    position: absolute;
+    left: -5px;
+    line-height: 28px;
+  }
+  &-image {
+    margin-left: 15px;
+    transform: translateY(55%);
+  }
+  &-link {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    a {
+      color: #fff;
+      background-color: $red;
+      padding: 17px 36px 8px 38.8px;
+      @include f700;
+      font-size: 19px;
+      text-align: center;
+    }
+  }
+}
+.aside__item-services {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: $bl;
+  text-align: center;
+  padding: 30px 24px 24px 24px;
+  margin-bottom: 30px;
+}
+.services__title {
+  margin-bottom: 25px;
+}
+.services__list {
+  li {
+    margin-bottom: 17px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    a {
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      @include f700;
+      font-size: 15px;
+      padding: 11px 16px;
+    }
+  }
+}
+.aside__item-calculation {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: $bl;
+  padding: 28px 30px 0px 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 259px;
+}
+.calculation__title {
+  margin-bottom: 29px;
+}
+.calculation__link {
+  a {
+    color: #fff;
+    @include f700;
+    padding: 11px;
+    font-size: 16px;
+    background-color: $red;
+  }
+}
+.calculation__image {
+  margin-top: 30px;
+  transform: translateX(-35px);
+}
+// end aside
+
+// start article
+.article__title {
+  font-size: 36px;
+  @include f700;
+  color: $bl;
+  margin-bottom: 50px;
+  line-height: 21px;
+}
+.article__item {
+  max-width: 938px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47px;
+  &-image {
+   position: relative;
+   img {
+     object-fit: cover;
+     width: 361px;
+     height: 100%;
+   }
+   span {
+     position: absolute;
+     display: block;
+     left: 0;
+     bottom: 0;
+     text-transform: uppercase;
+     background-color: rgba(37, 37, 37, 0.9);
+     padding: 7px 28px 6px 20px;
+     font-size: 24px;
+     text-align: center;
+     color: #fff;
+     @include f500;
+   }
+  }
+  &-content {
+    margin-left: 30px;
+  }
+  &-title {
+    margin-bottom: 22px;
+    font-size: 25px;
+    @include f700;
+    color: #000;
+  }
+  &-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #000;
+    line-height: 24px;
+  }
+  &-link {
+    a {
+      background-color: $red;
+      text-align: center;
+      color: #fff;
+      padding: 16px 98px 16px 94px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+}
+.pagination {
+  margin: 75px 0px;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 23px;
+    }
+  }
+  a,
+  span {
+    width: 52px;
+    height: 50px;
+    background-color: #c4c4c4;
+    color: #252525;
+    @include f700;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.active {
+      background-color: $red;
+      color: #fff;
+    }
+  }
+}
+// end article
+
 @import "media";
