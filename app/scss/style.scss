@@ -418,10 +418,10 @@
   position: absolute;
   right: 81px;
   bottom: -168px;
- img {
-   object-fit: cover;
-   max-width: 100%;
- }
+  img {
+    object-fit: cover;
+    max-width: 100%;
+  }
 }
 // end product-action
 
@@ -494,7 +494,6 @@
       }
     }
   }
-  
 }
 .revers {
   order: 1;
@@ -512,7 +511,6 @@
 }
 
 // end methods
-
 
 // start certificate
 .certificate {
@@ -560,7 +558,6 @@
 .information__title {
   @include f500;
   margin-bottom: 75px;
-  
 }
 .information__inner {
   display: flex;
@@ -863,7 +860,6 @@
 }
 // end footer
 
-
 // start aside
 .blog {
   margin-top: 66px;
@@ -887,7 +883,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 30px;
   &::before {
-    content: '';
+    content: "";
     background-color: rgba(37, 37, 37, 0.9);
     width: 100%;
     height: 100%;
@@ -904,14 +900,13 @@
   height: 100%;
   z-index: 1;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 19%;
     width: 4px;
     background-color: #353535;
     top: 30px;
     left: -4px;
-    
   }
   &-info {
     margin-top: 38px;
@@ -1004,25 +999,25 @@
   justify-content: space-between;
   margin-bottom: 47px;
   &-image {
-   position: relative;
-   img {
-     object-fit: cover;
-     width: 361px;
-     height: 100%;
-   }
-   span {
-     position: absolute;
-     display: block;
-     left: 0;
-     bottom: 0;
-     text-transform: uppercase;
-     background-color: rgba(37, 37, 37, 0.9);
-     padding: 7px 28px 6px 20px;
-     font-size: 24px;
-     text-align: center;
-     color: #fff;
-     @include f500;
-   }
+    position: relative;
+    img {
+      object-fit: cover;
+      width: 361px;
+      height: 100%;
+    }
+    span {
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+      text-transform: uppercase;
+      background-color: rgba(37, 37, 37, 0.9);
+      padding: 7px 28px 6px 20px;
+      font-size: 24px;
+      text-align: center;
+      color: #fff;
+      @include f500;
+    }
   }
   &-content {
     margin-left: 30px;

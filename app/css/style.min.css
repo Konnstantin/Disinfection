@@ -1233,7 +1233,7 @@ body {
 }
 
 .aside__item--audit::before {
-  content: '';
+  content: "";
   background-color: rgba(37, 37, 37, 0.9);
   width: 100%;
   height: 100%;
@@ -1251,7 +1251,7 @@ body {
 }
 
 .audit__content::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 19%;
   width: 4px;
