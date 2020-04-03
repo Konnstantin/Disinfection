@@ -44,7 +44,7 @@ $(function(){
     $('.menu').removeClass('active');
   });
 
-  $("#phone,#phone_2").mask("+7 (999) 999-99-99");
+  $("#phone,#phone_2,#phone_1").mask("+7 (999) 999-99-99");
 
 
 

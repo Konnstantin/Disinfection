@@ -160,6 +160,11 @@ body {
           align-items: center;
 }
 
+.header__logo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header__btn {
   display: none;
 }
@@ -1131,13 +1136,16 @@ body {
 
 .contacts__item-number {
   background-color: #252525;
-  color: #fff;
   padding: 10px 0px 10px 15px;
   border-left: 5px solid #E31E24;
   font-family: 'Roboto',sans-serif;
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 29px;
+}
+
+.contacts__item-number a {
+  color: #fff;
 }
 
 .contacts__item-number span {
@@ -2098,7 +2106,7 @@ body {
     height: 300px;
   }
   .slider__reviews .slick-dots li button {
-    width: 10px;
+    width: 12px;
     height: 12px;
   }
 }
