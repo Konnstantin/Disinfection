@@ -34,9 +34,14 @@ h4 {
   list-style: none;
 }
 
+input[type="tel"] {
+  -webkit-appearance: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  -webkit-overflow-scrolling: touch;
 }
 
 .wrapper {
