@@ -1,3 +1,10 @@
+@media (max-width: 1300px) {
+  .product-action {
+    &:before {
+      display: none;
+    }
+  }
+}
 @media (max-width: 1200px) {
   .contacts__item {
     max-width: 100%;
@@ -70,15 +77,7 @@
     line-height: 28px;
   }
 }
-@media (max-width: 1300px) {
-  .product-action {
-    &:before {
-      transform: translateX(0px);
-      transition: all 1s;
-      right: -227px;
-    }
-  }
-}
+
 @media (max-width: 1140px) {
   .information__inner {
     justify-content: center;
@@ -89,7 +88,7 @@
     margin-top: 45px;
 }
   .breadcrumbs {
-    margin-top: 55px;
+    margin-top: 50px;
   }
   .page__aside {
     display: none;
@@ -317,6 +316,8 @@
       img {
         max-width: 100%;
         height: auto;
+        display: block;
+        margin: 0 auto;
       }
       span {
         display: flex;
