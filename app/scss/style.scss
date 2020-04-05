@@ -326,23 +326,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  &:hover::before {
-    transition: all 1.3s;
-    transform: translateX(0px);
-  }
-  &::before {
-    content: "";
-    background-image: url(../images/product-action/tum.svg);
-    width: 1956px;
-    transform: translateX(-5000px);
-    min-height: 898px;
+  .boxic-tum {
+    position: absolute;
     right: 204px;
     top: -249px;
-    position: absolute;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: all 8s;
   }
   &__inner {
     display: flex;
@@ -433,15 +420,29 @@
 // start methods
 .methods {
   padding: 138px 0px 125px;
+  overflow-x: hidden;
 }
 .methods__title {
   margin-bottom: 83px;
+  position: relative;
 }
 .methods__content {
   &-item {
     display: flex;
     align-items: center;
     margin-bottom: 85px;
+    animation-name: fadeInLeft;
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
   }
   &-image {
     position: relative;
@@ -499,6 +500,20 @@
       }
     }
   }
+}
+.anim--right {
+  animation-name: fadeInRight;
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
 }
 .revers {
   order: 1;

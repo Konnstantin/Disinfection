@@ -25,8 +25,8 @@ h4 {
   padding: 0;
   list-style: none;
 }
-input {
-  appearance: none !important;
+input[type="text"] {
+  -webkit-appearance: none;
 }
 body {
   font-family: 'Roboto', sans-serif;

@@ -46,6 +46,6 @@ $(function(){
 
   $("#phone,#phone_2,#phone_1").mask("+7 (999) 999-99-99");
 
-
+  new WOW().init();
 
 });
