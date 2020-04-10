@@ -53,9 +53,12 @@
   display: none;
 }
 
-.header__middle {
+// end header
+
+// start promo
+
+.promo {
   height: 100vh;
-  // min-height: 696px;
   left: 0;
   right: 0;
   position: absolute;
@@ -65,14 +68,14 @@
     rgba(3, 3, 3, 0.59) 99.99%,
     rgba(255, 255, 255, 0) 100%
   );
-  &-inner {
-    display: flex;
-    justify-content: space-between;
-  }
-  &-content {
-    padding: 116px 0px;
-    color: #fff;
-  }
+}
+.promo__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.promo__content {
+  padding: 116px 0px;
+  color: #fff;
   &-title {
     font-size: 36px;
     margin-bottom: 13px;
@@ -124,8 +127,7 @@
   display: none;
   max-width: 128px;
 }
-
-.box-border {
+.promo__box-border {
   max-width: 380px;
   height: 312px;
   border: 8px solid $red;
@@ -133,7 +135,7 @@
   position: relative;
   z-index: 1;
 }
-.header__middle-action {
+.promo__action {
   position: relative;
   height: 296px;
   padding: 45px 39px 51px;
@@ -151,7 +153,7 @@
     left: -72px;
   }
 }
-.box-action {
+.promo__box-action {
   position: absolute;
   z-index: -1;
   right: -16px;
@@ -160,7 +162,7 @@
   height: 50px;
   background-color: $bl;
 }
-.header__middle-action-text {
+.promo__action-text {
   text-align: center;
   font-size: 32px;
   @include f700;
@@ -172,7 +174,7 @@
     color: #000;
   }
 }
-.header__middle-form {
+.promo__action-form {
   max-width: 274px;
   text-align: center;
   margin-top: 26px;
@@ -269,14 +271,11 @@
 }
 .slider__item {
   height: 100vh;
-  // max-width: 1442px;
-  // max-width: 100%;
-  // min-height: 696px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-// end header
+// end promo
 
 // start destruction
 .destruction {
@@ -437,7 +436,7 @@
         opacity: 0;
         transform: translate3d(-100%, 0, 0);
       }
-    
+
       to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
@@ -503,17 +502,17 @@
 }
 .anim--right {
   animation-name: fadeInRight;
-    @keyframes fadeInRight {
-      from {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-      }
-    
-      to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
     }
+
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
 .revers {
   order: 1;
