@@ -312,13 +312,6 @@
     }
   }
 }
-@media (max-width: 900px) {
-  .product-action {
-    &:before {
-      display: none;
-    }
-  }
-}
 @media (max-width:855px) {
   .product-action__info-image {
     animation-name: fadeInDown;

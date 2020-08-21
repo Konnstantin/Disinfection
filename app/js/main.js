@@ -16,6 +16,7 @@ $(function(){
     }
     $(this).toggleClass('active').next().slideToggle(300);
   });
+  
 
 
   $('.slider__reviews').slick({
